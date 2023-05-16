@@ -1,8 +1,24 @@
 {
   "name": "multi-provider",
-  "private": true,
   "version": "0.0.0",
+  "author": {
+    "name": "wlanxww",
+    "email": "xueweiwujxw@outlook.com",
+    "url": "https://github.com/xueweiwujxw"
+  },
+  "description": "A component that allows chaining multiple providers as children.",
+  "keywords": [
+    "react",
+    "react-context",
+    "multi-provider",
+    "chain-provider"
+  ],
   "type": "module",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/xueweiwujxw/multi-provider",
+  "bugs": {
+    "url": "https://github.com/xueweiwujxw/multi-provider/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

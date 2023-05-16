@@ -1,10 +1,51 @@
 import React from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import './style/App.css';
-import Child from './Child';
-import MultiProvider from './Modules/MultiProvider';
-import { CountContext, NameContext } from './tools/Context';
+import './App.css';
+import MultiProvider from './MultiProvider';
+
+const CountContext = React.createContext<{
+  count: number;
+  setCount: React.Dispatch<React.SetStateAction<number>>;
+}>({
+  count: 0,
+  setCount: () => {
+    //
+  },
+});
+
+const NameContext = React.createContext<{
+  name: string;
+  setName: React.Dispatch<React.SetStateAction<string>>;
+}>({
+  name: 'wlanxww',
+  setName: () => {
+    //
+  },
+});
+
+const Child = () => {
+  const { setCount } = React.useContext(CountContext);
+  const { name, setName } = React.useContext(NameContext);
+
+  return (
+    <div className='card'>
+      <button
+        onClick={() => {
+          setCount(prev => prev + 1);
+        }}
+      >
+        click here to add count
+      </button>
+      <span> </span>
+      <button onClick={() => setCount(0)}>click here to clear count</button>
+      <span> </span>
+      <div className='input-button'>
+        <input onChange={e => setName(e.target.value)} value={name} />
+      </div>
+    </div>
+  );
+};
 
 function App() {
   const [count, setCount] = React.useState(0);
