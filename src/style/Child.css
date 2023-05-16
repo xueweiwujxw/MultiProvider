@@ -1,0 +1,24 @@
+.card {
+  padding: 2em;
+}
+
+.input-button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: #f0f0f0;
+  /* padding: 0.5rem; */
+  border-radius: 4px;
+  outline: none;
+  cursor: text;
+}
+
+.input-button input {
+  border: none;
+  background-color: transparent;
+  flex: 1;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  outline: none;
+  font-size: 16px;
+}
