@@ -30,8 +30,14 @@ jobs:
       - name: Size
         run: yarn size
 
-      - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
-
       - name: Build
         run: yarn build
+
+      - name: Test
+        run: yarn test --ci --coverage --maxWorkers=2
+      
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: coverage

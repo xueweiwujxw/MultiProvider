@@ -31,11 +31,17 @@ jobs:
       - name: Size
         run: yarn size
 
-      - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
-
       - name: Build
         run: yarn build
+
+      - name: Test
+        run: yarn test --ci --coverage --maxWorkers=2
+      
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: coverage
 
   release:
     environment: npm-deploy
@@ -49,7 +55,7 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
-          scope: '@octocat'
+          scope: 'wlanxww'
       - run: yarn
       - name: Release Module
         run: yarn publish
