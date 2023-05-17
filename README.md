@@ -8,13 +8,13 @@
 
 A component that allows chaining multiple providers as children.
 
-## Install
+### Install
 
 ```sheel
 yarn add multi-provider-react
 ```
 
-## Usage
+### Usage
 
 ```typescript
 import * as React from 'react';
