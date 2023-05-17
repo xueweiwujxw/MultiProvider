@@ -1,8 +1,8 @@
-import React from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
 import './App.css';
-import MultiProvider from './MultiProvider';
+import MultiProvider from '../.';
 
 const CountContext = React.createContext<{
   count: number;
@@ -53,14 +53,6 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank' rel='noreferrer'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
-      </div>
       <h1>Vite + React</h1>
       <div className='card'>Hello {name}</div>
       <div className='card'>count is {count}</div>
@@ -88,4 +80,4 @@ function App() {
   );
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
