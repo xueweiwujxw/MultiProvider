@@ -1,0 +1,57 @@
+name: Release module
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release-test:
+    strategy:
+      matrix:
+        node: [ 16, 18 ]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Use Node ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
+
+      - name: Lint
+        run: yarn lint
+      
+      - name: Size
+        run: yarn size
+
+      - name: Build
+        run: yarn build
+
+      - name: Test
+        run: yarn test --ci --coverage --maxWorkers=2
+
+  release:
+    environment: npm-deploy
+    needs: release-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+          # Defaults to the user or organization that owns the workflow file
+          scope: 'wlanxww'
+      - run: yarn
+      - name: Release Module
+        run: yarn publish
+        env: 
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
