@@ -1,6 +1,7 @@
 ![Test](https://github.com/xueweiwujxw/multi-provider/actions/workflows/test.yml/badge.svg)
 ![release](https://github.com/xueweiwujxw/multi-provider/actions/workflows/release.yml/badge.svg)
 ![license](https://img.shields.io/badge/license-Apache--2.0-green)
+[![npm version](https://badge.fury.io/js/multi-provider-react.svg)](https://www.npmjs.com/package/multi-provider-react)
 
 ## MultiProvider
 
