@@ -26,6 +26,9 @@ jobs:
 
       - name: Lint
         run: yarn lint
+      
+      - name: Size
+        run: yarn size
 
       - name: Test
         run: yarn test --ci --coverage --maxWorkers=2
