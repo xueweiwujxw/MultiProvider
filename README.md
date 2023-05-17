@@ -1,12 +1,12 @@
 ![Test](https://github.com/xueweiwujxw/multi-provider/actions/workflows/test.yml/badge.svg)
 ![release](https://github.com/xueweiwujxw/multi-provider/actions/workflows/release.yml/badge.svg)
+[![codecov](https://codecov.io/gh/xueweiwujxw/multi-provider/branch/master/graph/badge.svg?token=6UTGHWTWO1)](https://codecov.io/gh/xueweiwujxw/multi-provider)
 ![license](https://img.shields.io/badge/license-Apache--2.0-green)
 [![npm version](https://badge.fury.io/js/multi-provider-react.svg)](https://www.npmjs.com/package/multi-provider-react)
 [![Downloads](https://img.shields.io/npm/dt/multi-provider-react)](https://www.npmjs.com/package/multi-provider-react)
 ![repo size](https://img.shields.io/github/repo-size/xueweiwujxw/multi-provider)
 [![issues](https://img.shields.io/github/issues/xueweiwujxw/multi-provider)](https://github.com/xueweiwujxw/multi-provider/issues)
 [![pr](https://img.shields.io/github/issues-pr/xueweiwujxw/multi-provider)](https://github.com/xueweiwujxw/multi-provider/pulls)
-
 
 ## MultiProvider
 
