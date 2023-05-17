@@ -11,7 +11,7 @@ A component that allows chaining multiple providers as children.
 ## Install
 
 ```sheel
-yarn add multi-provider
+yarn add multi-provider-react
 ```
 
 ## Usage
