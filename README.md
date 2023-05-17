@@ -1,5 +1,6 @@
 ![Test](https://github.com/xueweiwujxw/multi-provider/actions/workflows/test.yml/badge.svg)
 ![release](https://github.com/xueweiwujxw/multi-provider/actions/workflows/release.yml/badge.svg)
+![license](https://img.shields.io/badge/license-Apache--2.0-green)
 
 ## MultiProvider
 
