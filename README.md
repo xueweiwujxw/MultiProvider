@@ -4,9 +4,9 @@
 
 ## MultiProvider
 
----
-
 A component that allows chaining multiple providers as children.
+
+---
 
 ### Install
 
@@ -21,7 +21,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 
 import './App.css';
-import MultiProvider from '../.';
+import MultiProvider from 'multi-provider-react';
 
 const CountContext = React.createContext<{
   count: number;
@@ -30,7 +30,7 @@ const CountContext = React.createContext<{
   count: 0,
   setCount: () => {
     //
-  }
+  },
 });
 
 const NameContext = React.createContext<{
@@ -40,7 +40,7 @@ const NameContext = React.createContext<{
   name: 'wlanxww',
   setName: () => {
     //
-  }
+  },
 });
 
 const Child = () => {
@@ -81,16 +81,16 @@ function App() {
             key='count'
             value={{
               count: count,
-              setCount: setCount
+              setCount: setCount,
             }}
           />,
           <NameContext.Provider
             key='name'
             value={{
               name: name,
-              setName: setName
+              setName: setName,
             }}
-          />
+          />,
         ]}
       >
         <Child />

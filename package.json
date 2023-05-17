@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -26,6 +26,16 @@
   "name": "multi-provider-react",
   "author": "wlanxww",
   "module": "dist/multi-provider-react.esm.js",
+  "repository": "https://github.com/xueweiwujxw/multi-provider",
+  "homepage": "https://github.com/xueweiwujxw/multi-provider",
+  "bugs": "https://github.com/xueweiwujxw/multi-provider/issues",
+  "keywords": [
+    "react",
+    "react-context",
+    "multiple-provider",
+    "chain-provider",
+    "typescript"
+  ],
   "size-limit": [
     {
       "path": "dist/multi-provider-react.cjs.production.min.js",
