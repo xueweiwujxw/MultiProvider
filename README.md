@@ -7,6 +7,7 @@
 ![repo size](https://img.shields.io/github/repo-size/xueweiwujxw/multi-provider)
 [![issues](https://img.shields.io/github/issues/xueweiwujxw/multi-provider)](https://github.com/xueweiwujxw/multi-provider/issues)
 [![pr](https://img.shields.io/github/issues-pr/xueweiwujxw/multi-provider)](https://github.com/xueweiwujxw/multi-provider/pulls)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a45a343944be4c80bff012ff4300ddc8)](https://app.codacy.com/gh/xueweiwujxw/multi-provider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## MultiProvider
 
