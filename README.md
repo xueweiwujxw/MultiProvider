@@ -1,19 +1,34 @@
-![Test](https://github.com/xueweiwujxw/multi-provider/actions/workflows/test.yml/badge.svg)
-![release](https://github.com/xueweiwujxw/multi-provider/actions/workflows/release.yml/badge.svg)
-[![codecov](https://codecov.io/gh/xueweiwujxw/multi-provider/branch/master/graph/badge.svg?token=6UTGHWTWO1)](https://codecov.io/gh/xueweiwujxw/multi-provider)
-![license](https://img.shields.io/badge/license-Apache--2.0-green)
-[![npm](https://img.shields.io/npm/v/multi-provider-react)](https://www.npmjs.com/package/multi-provider-react)
-[![Downloads](https://img.shields.io/npm/dt/multi-provider-react)](https://www.npmjs.com/package/multi-provider-react)
-![repo size](https://img.shields.io/github/repo-size/xueweiwujxw/multi-provider)
-[![issues](https://img.shields.io/github/issues/xueweiwujxw/multi-provider)](https://github.com/xueweiwujxw/multi-provider/issues)
-[![pr](https://img.shields.io/github/issues-pr/xueweiwujxw/multi-provider)](https://github.com/xueweiwujxw/multi-provider/pulls)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a45a343944be4c80bff012ff4300ddc8)](https://app.codacy.com/gh/xueweiwujxw/multi-provider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-
-## MultiProvider
-
-A component that allows chaining multiple providers as children.
-
----
+<h2 align="center">
+  MultiProvider
+</h2>
+<p align="center">
+  A component that allows chaining multiple providers as children.
+</p>
+<p align="center">
+  <img src="https://github.com/xueweiwujxw/multi-provider/actions/workflows/test.yml/badge.svg" alt="Test">
+  <img src="https://github.com/xueweiwujxw/multi-provider/actions/workflows/release.yml/badge.svg" alt="release">
+  <a href="https://codecov.io/gh/xueweiwujxw/multi-provider">
+    <img src="https://codecov.io/gh/xueweiwujxw/multi-provider/branch/master/graph/badge.svg?token=6UTGHWTWO1" alt="codecov">
+  </a>
+  <a href="https://www.npmjs.com/package/multi-provider-react">
+    <img src="https://img.shields.io/npm/v/multi-provider-react" alt="npm">
+  </a>
+  <br/>
+  <a href="https://www.npmjs.com/package/multi-provider-react">
+    <img src="https://img.shields.io/npm/dt/multi-provider-react" alt="Downloads">
+  </a>
+  <img src="https://img.shields.io/github/repo-size/xueweiwujxw/multi-provider" alt="repo size">
+  <a href="https://github.com/xueweiwujxw/multi-provider/issues">
+    <img src="https://img.shields.io/github/issues/xueweiwujxw/multi-provider" alt="issues">
+  </a>
+  <a href="https://github.com/xueweiwujxw/multi-provider/pulls">
+    <img src="https://img.shields.io/github/issues-pr/xueweiwujxw/multi-provider" alt="pr">
+  </a>
+  <a href="https://app.codacy.com/gh/xueweiwujxw/multi-provider/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade">
+    <img src="https://app.codacy.com/project/badge/Grade/a45a343944be4c80bff012ff4300ddc8" alt="Codacy Badge">
+  </a>
+</p>
+<hr/>
 
 ### Install
 
